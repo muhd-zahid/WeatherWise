@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+
+        <div class="search-section">
+            <h1 class="app-title">WeatherWise</h1>
+            <p class="app-subtitle">Your personal weather companion</p>
+            <div class="search-box">
+                <input type="text" id="cityInput"
+                       placeholder="Search for a city...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+            <div class="weather-main">
+                <div class="city-name" id="cityName">--</div>
+                <div class="weather-icon" id="weatherIcon">🌤️</div>
+                <div class="temperature" id="temperature">--°C</div>
+                <div class="description" id="description">--</div>
+            </div>
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-label">Humidity</span>
+                    <span class="detail-value" id="humidity">--%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Wind Speed</span>
+                    <span class="detail-value" id="windSpeed">-- km/h</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Feels Like</span>
+                    <span class="detail-value" id="feelsLike">--°C</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-section" id="forecastSection">
+            <h2 class="forecast-title">5-Day Forecast</h2>
+            <div class="forecast-container" id="forecastContainer">
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            City not found. Please try again.
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
